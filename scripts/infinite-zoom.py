@@ -403,7 +403,7 @@ def on_ui_tabs():
                 with gr.Tab("Main"):
                     main_outpaint_steps = gr.Slider(
                         minimum=2,
-                        maximum=100,
+                        maximum=1000,
                         step=1,
                         value=8,
                         label="Total Outpaint Steps",
@@ -471,7 +471,7 @@ def on_ui_tabs():
                     with gr.Row():
                         main_guidance_scale = gr.Slider(
                             minimum=0.1,
-                            maximum=15,
+                            maximum=50,
                             step=0.1,
                             value=7,
                             label="Guidance Scale",
